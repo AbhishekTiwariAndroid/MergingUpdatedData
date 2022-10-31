@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1F4F8"
+    android:scrollbars="vertical"
+    android:scrollIndicators="end"
+    tools:context=".MainActivity">
+
+
+    <!--    &lt;!&ndash;    <ScrollView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">&ndash;&gt;-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/List"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:descendantFocusability="blocksDescendants"
+            android:scrollbars="vertical" />
+
+
+        <!--below is the view for our shimmer-->
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:shimmer_duration="1400"
+            app:shimmer_intensity="0.35"
+            android:animateLayoutChanges="true"
+            android:animationCache="true"
+            app:shimmer_repeat_mode="restart"
+            app:shimmer_shape="linear">
+
+            <!--For shimmer we are creating a same
+                layout but setting its background
+                as a gray colour and not providing
+                any view inside it-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--below we are displaying multiple
+                    shimmer layouts using include
+                    to show them in list format-->
+                <include layout="@layout/shimmer_layout" />
+                <include layout="@layout/shimmer_layout" />
+                <include layout="@layout/shimmer_layout" />
+                <include layout="@layout/shimmer_layout" />
+                <include layout="@layout/shimmer_layout" />
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+    </RelativeLayout>
+    <!--  </ScrollView>-->
+
+
+</androidx.core.widget.NestedScrollView>

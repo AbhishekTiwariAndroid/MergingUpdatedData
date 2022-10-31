@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="392dp"
+        android:layout_height="264dp"
+        android:layout_margin="4dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/white"
+        android:elevation="1dp"
+        android:padding="4dp"
+        android:paddingStart="20dp"
+        android:visibility="visible"
+        app:cardCornerRadius="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+
+            <ImageView
+                android:id="@+id/userTradeList"
+                android:layout_width="167dp"
+                android:layout_height="22dp"
+                android:background="#B3B3B3"
+                android:descendantFocusability="blocksDescendants"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.122"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.035" />
+
+            <ImageView
+                android:id="@+id/userTradeList2"
+                android:layout_width="338dp"
+                android:layout_height="152dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="8dp"
+                android:background="#B3B3B3"
+                android:descendantFocusability="blocksDescendants"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.48"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.305" />
+
+            <ImageView
+                android:id="@+id/userTradeList7"
+                android:layout_width="167dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="26dp"
+                android:background="#B3B3B3"
+                android:descendantFocusability="blocksDescendants"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.142" />
+
+            <ImageView
+                android:id="@+id/userTradeList6"
+                android:layout_width="167dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="16dp"
+                android:background="#B3B3B3"
+                android:descendantFocusability="blocksDescendants"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.127" />
+
+            <ImageView
+                android:id="@+id/userTradeList5"
+                android:layout_width="167dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="26dp"
+                android:background="#B3B3B3"
+                android:descendantFocusability="blocksDescendants"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.098" />
+
+            <ImageView
+                android:id="@+id/userTradeList4"
+                android:layout_width="167dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="6dp"
+                android:background="#B3B3B3"
+                android:descendantFocusability="blocksDescendants"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.086" />
+
+            <ImageView
+                android:id="@+id/userTradeList3"
+                android:layout_width="167dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="26dp"
+                android:background="#B3B3B3"
+                android:descendantFocusability="blocksDescendants"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.035" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
